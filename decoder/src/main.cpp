@@ -28,7 +28,7 @@ int main(void)
     system("bash tempfile.ps1");    //run the script on linux
 #endif
 
-    remove("tempfile.ps1");//delete the temporary file
+    remove("tempfile.sh");//delete the temporary file
     
 
     return 0;
