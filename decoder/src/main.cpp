@@ -24,11 +24,13 @@ int main(void)
 #if defined(_WIN32) || defined(WIN32)
     system("powershell -ExecutionPolicy Bypass -F tempfile.ps1"); //run the script on windows
     //DEBUG system("type tempfile.ps1");//show content
+	remove("tempfile.ps1");//delete the temporary file
 #else
-    system("bash tempfile.ps1");    //run the script on linux
+    system("bash tempfile.sh");    //run the script on linux
+	remove("tempfile.sh");//delete the temporary file
 #endif
 
-    remove("tempfile.sh");//delete the temporary file
+    
     
 
     return 0;
