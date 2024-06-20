@@ -12,7 +12,12 @@ int main(void)
 {
     //create temporary file to save script
     std::ofstream file;
+	
+#if defined(_WIN32) || defined(WIN32)
     file.open("tempfile.ps1");
+#else
+	file.open("tempfile.sh");
+#endif
 
     //create the script
     std::string outputText = HideFile::retrieve();

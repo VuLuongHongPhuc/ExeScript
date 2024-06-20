@@ -18,3 +18,4 @@ The project is cross-platform, it works for Windows and Linux.
 5. Copy the ouput file "hidefile.cpp" from "encoder\ouput\" into "decoder\src\" folder
 6. Move to decoder folder and build the executable with "make"
 7. Your script is now encapsulated in the executable named "LaunchThisScript" in "decoder\bin\" folder
+8. Create folder "obj" and "bin" if missing on "encoder" and "decoder".
